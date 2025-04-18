@@ -1,0 +1,29 @@
+server:
+  port: 8761
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  instance:
+    hostname: localhost
+  dashboard:
+    path: /
+
+# Optional configurations:
+#spring:
+#  security:
+#    user:
+#      name: eureka
+#      password: password
+
+#logging:
+#  level:
+#    com:
+#      netflix:
+#        eureka: OFF
+#        discovery: OFF
+
+#eureka:
+#  server:
+#    wait-time-in-ms-when-sync-empty: 0
