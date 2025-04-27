@@ -1,0 +1,29 @@
+server:
+  port: 8761
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  instance:
+    hostname: eureka-server
+    prefer-ip-address: true
+  dashboard:
+    path: /
+
+# Actuator configuration
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: always
+
+logging:
+  level:
+    com:
+      netflix:
+        eureka: INFO
+        discovery: INFO
