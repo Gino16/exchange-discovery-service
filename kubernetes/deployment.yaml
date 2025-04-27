@@ -16,7 +16,9 @@ spec:
     spec:
       containers:
       - name: eureka-server
-        image: ${DOCKER_REGISTRY:-}exchange-discovery-service:${IMAGE_TAG:-latest}
+#        image: ${DOCKER_REGISTRY:-}exchange-discovery-service:${IMAGE_TAG:-latest}
+        image: exchange-discovery-service-eureka-server:latest
+        imagePullPolicy: Never
         ports:
         - containerPort: 8761
         volumeMounts:

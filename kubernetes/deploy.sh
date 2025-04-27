@@ -7,7 +7,7 @@ echo "Building the application..."
 
 # Build the Docker image
 echo "Building the Docker image..."
-docker build -t exchange-discovery-service:latest .
+docker build -t exchange-discovery-service-eureka-server:latest .
 
 # Deploy to Kubernetes
 echo "Deploying to Kubernetes..."
